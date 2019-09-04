@@ -6,7 +6,7 @@ function GaBqPlugin(tracker) {
             var payLoad = model.get('hitPayload');
             originalSendHitTask(model);
             var gifRequest = new XMLHttpRequest();
-            var gifPath = "http://your-gae-domain/collect";
+            var gifPath = "http://lex-exchange-251906/collect";
             gifRequest.open('get', gifPath + '?' + payLoad, true);
             gifRequest.send();
         });
